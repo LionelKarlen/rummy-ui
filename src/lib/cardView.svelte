@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Card, Suit } from "rummy-lib";
+  import { Card, Rank, Suit } from "rummy-lib";
   import { convertRank, convertSuit } from "./renderUtils";
   export let card: Card;
   export let isEnemy: boolean;
@@ -9,12 +9,12 @@
   {#if !isEnemy}
     <p class="symbol">
       {convertSuit(card.suit)}
-	  {card.score}
+	  {convertRank(card.rank)}
     </p>
-    <p class="text">{convertRank(card.rank)}</p>
+    <p class="text">{card.score}</p>
     <p class="symbol rotated">
       {convertSuit(card.suit)}
-	  {card.score}
+	  {convertRank(card.rank)}
     </p>
   {/if}
 </div>
@@ -22,7 +22,7 @@
 <style>
   .card {
     aspect-ratio: 2/3;
-    height: 30vh;
+    height: 20vh;
     border: 1px black solid;
     border-radius: 0.75rem;
     padding: 0.75rem;

@@ -16,13 +16,13 @@ export function convertSuit(suit: Suit): string {
 export function convertRank(rank: Rank): string {
   switch (rank) {
     case Rank.ACE:
-      return "ACE";
+      return "A";
     case Rank.JACK:
-      return "JACK";
+      return "J";
     case Rank.QUEEN:
-      return "QUEEN";
+      return "Q";
     case Rank.KING:
-      return "KING";
+      return "K";
     default:
       return (rank + 1).toString();
   }

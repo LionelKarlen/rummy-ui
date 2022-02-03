@@ -22,6 +22,8 @@
     "vite": "^2.7.2"
   },
   "dependencies": {
-    "rummy-lib": "^1.0.10"
+    "@types/socket.io": "^3.0.2",
+    "rummy-lib": "^1.0.10",
+    "socket.io-client": "^4.4.1"
   }
 }

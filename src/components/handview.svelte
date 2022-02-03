@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: row;
     align-content: center;
-    max-width: 75vw;
+    max-width: 45rem;
   }
   .wrapper {
     overflow: hidden;
